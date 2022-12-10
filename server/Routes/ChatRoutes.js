@@ -3,7 +3,7 @@ import {
   createChat,
   findChat,
   userChats,
-} from "../controllers/ChatController.js";
+} from "../Controllers/ChatController.js";
 const router = express.Router();
 
 router.post("/", createChat);
