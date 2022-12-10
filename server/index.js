@@ -12,6 +12,9 @@ import AdminRoute from "./Routes/adminRoutes.js";
 import dotenv from "dotenv";
 import cors from "cors";
 import { mongoconnection } from "./connection/config.js";
+const corsOptions = {
+  origin: "https://main.d2hnnhzbkq0qew.amplifyapp.com",
+};
 //Routes
 const app = express();
 //to serve images for public
@@ -20,7 +23,7 @@ app.use("/images", express.static("images"));
 //Middleware
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
+app.use(cors(corsOptions));
 dotenv.config();
 
 app.listen(process.env.PORT, () =>
