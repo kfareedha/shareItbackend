@@ -7,8 +7,8 @@ import {
   deletePost,
   likePost,
   getTimelinePosts,
-  addComment,
   reportPost,
+  addComment,
 } from "../Controllers/PostController.js";
 const router = express.Router();
 router.post("/", createPost);

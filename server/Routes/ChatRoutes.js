@@ -1,8 +1,8 @@
 import express from "express";
 import {
   createChat,
-  findChat,
   userChats,
+  findChat,
 } from "../Controllers/ChatController.js";
 const router = express.Router();
 

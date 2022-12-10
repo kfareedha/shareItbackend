@@ -4,8 +4,8 @@ import {
   blockUser,
   findOneuser,
   getAllPosts,
-  deleteRPost,
   getAllRpost,
+  deleteRPost,
 } from "../Controllers/AdminController.js";
 const router = express.Router();
 

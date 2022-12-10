@@ -7,8 +7,8 @@ import {
   followUser,
   unfollowUser,
   getAllUsers,
-  getfollowingUsers,
   userSearch,
+  getfollowingUsers,
 } from "../Controllers/UserController.js";
 
 const router = express.Router();

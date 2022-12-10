@@ -2,8 +2,8 @@ import express from "express";
 import {
   registerUser,
   loginUser,
-  sendOTP,
   verifyOTP,
+  sendOTP,
 } from "../Controllers/AuthControllers.js";
 
 const router = express.Router();
